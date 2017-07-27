@@ -1,5 +1,4 @@
 %\usepackage{showframe}
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage{pagecolor}
 \usepackage{paracol}
 \usepackage{kantlipsum}
@@ -12,14 +11,50 @@
 \newcommand{\case}[2]{#1 #2}
 \newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
 
-\def \columncount {3}
-\def \skillcolumncount {2}
 
 \newenvironment{columns}{
-	\begin{multicols}{\columncount}
+	\ifnum\columncount>1
+		\begin{multicols}{\columncount}
+	\fi
 }{
-	\end{multicols}
+	\ifnum\columncount>1
+		\end{multicols}
+	\fi
 	\vspace{0.5cm}
+	\hrule
+}
+
+\newenvironment{cvskills}{
+	\noindent\begin{minipage}{\textwidth}
+		\ifnum\skillcolumncount>1
+			\begin{multicols}{\skillcolumncount}
+		\fi
+}{
+	\ifnum\skillcolumncount>1
+		\end{multicols}
+	\fi
+	\vspace{0.5cm}
+	\hrule
+	\end{minipage}
+}
+
+\newenvironment{cvtitle}[1]{
+	\noindent\begin{minipage}{\textwidth}
+		{\Huge \mbox{Curriculum Vitae}}	\hfill{\large \mbox{#1}}\\\\
+		\hrule
+		\vspace{0.5cm}
+		\ifnum\skillcolumncount>1
+			\begin{multicols}{\skillcolumncount}
+		\fi
+}{
+	\ifnum\skillcolumncount>1
+		\end{multicols}
+	\fi
+	\end{minipage}
+	\hfill
+	\begin{minipage}{\textwidth/3-2cm}
+	\end{minipage}
+	\vspace{1cm}
 	\hrule
 }
 
