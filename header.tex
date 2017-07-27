@@ -4,7 +4,10 @@
 \usepackage{kantlipsum}
 \usepackage{multicol}
 \usepackage{xifthen}
+\usepackage{tcolorbox}
+\usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
 %\pagecolor{yellow!5!orange!2!white}
 \setlength{\columnseprule}{0.1pt}
 \newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
@@ -67,7 +70,11 @@
 		\begin{columns}
 			\noindent{\Large \textbf{#1}} \hfill {\small #2} \\
 			\textit{#3}
-			\\\\
+			\ifnum\columncount>2
+				\vfill\null\columnbreak
+			\else
+				\\\\
+			\fi
 }
 {
 		\end{columns}
@@ -94,6 +101,33 @@
 { \begin{cvbox}{#1}{#2 - #3}{#4} }
 {\end{cvbox}}
 
+%\newenvironment{cvproj}[3]
+%{\begin{cvbox}{#1}{#2}{#3}}
+%{\end{cvbox}}
+
 \newenvironment{cvproj}[3]
-{\begin{cvbox}{#1}{#2}{#3}}
-{\end{cvbox}}
+{
+	\noindent
+	%\begin{minipage}{\textwidth}
+	
+	%\hrule
+	\begin{columns}
+		\noindent{\Large \textbf{#1}} \\ {\small #3} \\
+		{\tiny\textit{https://#2}}
+		\ifnum\columncount>2
+			\vfill\null\columnbreak
+		\else
+			\\\\
+		\fi
+	}
+	{
+	\end{columns}
+	%\end{minipage}
+	\vspace{0.5cm}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Morten Olsen \today}
+\lhead{Curriculum Vitae}
+\rfoot{Page \thepage}

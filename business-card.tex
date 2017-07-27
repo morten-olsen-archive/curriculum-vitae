@@ -1,0 +1,25 @@
+\newcommand{\cardline}[1]
+{
+	#1\\
+}
+
+\newenvironment{card}
+{
+	\pagebreak
+	\center
+	\begin{tcolorbox}[
+			width=4in,
+			height=2.3in,
+			left=20pt,
+			arc=0pt,
+			right=0pt,
+			top=30pt,
+			bottom=0pt,
+			boxrule=1pt,toprule=1pt,
+			colback=white,
+			boxsep=0pt,
+		]
+}
+{
+	\end{tcolorbox}
+}
