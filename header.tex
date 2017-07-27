@@ -70,7 +70,11 @@
 		\begin{columns}
 			\noindent{\Large \textbf{#1}} \hfill {\small #2} \\
 			\textit{#3}
-			\\\\
+			\ifnum\columncount>2
+				\vfill\null\columnbreak
+			\else
+				\\\\
+			\fi
 }
 {
 		\end{columns}
@@ -110,7 +114,11 @@
 	\begin{columns}
 		\noindent{\Large \textbf{#1}} \\ {\small #3} \\
 		{\tiny\textit{https://#2}}
-		\\\\
+		\ifnum\columncount>2
+			\vfill\null\columnbreak
+		\else
+			\\\\
+		\fi
 	}
 	{
 	\end{columns}
