@@ -1,0 +1,64 @@
+%\usepackage{showframe}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{pagecolor}
+\usepackage{paracol}
+\usepackage{kantlipsum}
+\usepackage{multicol}
+\usepackage{xifthen}
+\usepackage{graphicx}
+%\pagecolor{yellow!5!orange!2!white}
+\setlength{\columnseprule}{0.1pt}
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2}
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+
+\def \columncount {3}
+\def \skillcolumncount {2}
+
+\newenvironment{columns}{
+	\begin{multicols}{\columncount}
+}{
+	\end{multicols}
+	\vspace{0.5cm}
+	\hrule
+}
+
+\newenvironment{cvbox}[3]
+{
+	\noindent
+	%\begin{minipage}{\textwidth}
+
+		%\hrule
+		\begin{columns}
+			\noindent{\Large \textbf{#1}} \hfill {\small #2} \\
+			\textit{#3}
+			\\\\
+}
+{
+		\end{columns}
+	%\end{minipage}
+	\vspace{0.5cm}
+}
+
+\newcommand{\cvinfo}[2]{
+	\noindent \textbf{#1}\dotfill#2\\
+}
+
+\newcommand{\cvskill}[2]{
+	\textbf{#1}\dotfill
+	\textit{\begin{switch}{#2}
+		\case{1}{Needs refresh}
+		\case{2}{Needs refresh}
+		\case{3}{Comfortable}
+		\case{4}{Prefered}
+		\case{5}{Prefered}
+	\end{switch}}\\
+}
+
+\newenvironment{cvexp}[4]
+{ \begin{cvbox}{#1}{#2 - #3}{#4} }
+{\end{cvbox}}
+
+\newenvironment{cvproj}[3]
+{\begin{cvbox}{#1}{#2}{#3}}
+{\end{cvbox}}

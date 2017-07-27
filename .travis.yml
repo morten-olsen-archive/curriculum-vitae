@@ -1,0 +1,15 @@
+sudo: required
+services:
+- docker
+before_install:
+- docker pull harshjv/texlive-2015
+script:
+- docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c "pdflatex document.tex"
+deploy:
+  provider: releases
+  api_key:
+    secure: PFuEWZK/LGa4rFvVYUs3SL0xkF0dcMB6nJW1vOLFAoDguvcg9hOcQcPDsdeYaAuKxnD5OZ01NZtWC6p1dJRi/bOWAAJgRzo/l66cZ2xY4UUnVY6/9M+v73bjfvytjiZTw3gIoWKjmfB4CbcT4OCY/vrfXGYGwXZXDCImCo9dEOKVtN7xgs//wro9I4Ta+ZhsX+oGQqo7dA0AkY2VnWYiUTtm7qibDSNky8nxjTxmLBc4ukiEH7CsFkWnQ3jo7pUaL4fyaT0pd38Uy+5huZSdAoD7MYs2pkpqA/rAgn1W9OBuNXJlHkk2wnqdR4Dd7RnS4gNGgw9t1e4PezPgP66RY3HP6BZg1AGq6ru/FkVJtRJ2R70Kl56/Jtf9xKxgF544OeoRwYE0XsTWEqqa6O1XbzRF9JHfdLQjec7sd5xzKpiWsAsJWz+vmaEcZ+unwvC6sLOHSGjAuy8tyU4rWDlKo5wKnYBI4uxNkaVPZqTQgKRLH+uit2VJa/rP3ep3by+fvRv8fgPK14dm0rLo9xPWw5QVZ6q6mrCE11a0RL3CqyqZcOxsC4AMAzZLpJpyy0WQSlDy8QFuZmc9XphxzV6oCggufRQHfU9LIeA5W/+r/1oKtVmaffCuIxEZhj9aMxuUS0gcxKVX0bvucyFhalPYef+9NlieU52BT/IvRaWbwbs=
+  file: document.pdf
+  skip_cleanup: true
+  on:
+    tags: true
