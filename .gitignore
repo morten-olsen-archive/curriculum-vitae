@@ -1,8 +1,6 @@
-/document.log
-/document.synctex.gz
-/document.toc
-/document.aux
-/document.pdf
-/texput.log
-/header.aux
+/*.log
+/*.synctex.gz
+/*.toc
+/*.aux
+/*.pdf
 .DS_Store
