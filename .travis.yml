@@ -4,9 +4,9 @@ services:
 before_install:
 - docker pull harshjv/texlive-2015
 script:
-- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"pdflatex a4.tex\""
-- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"pdflatex a5.tex\""
-- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"pdflatex a6.tex\""
+- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"lualatex a4.tex\""
+- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"lualatex a5.tex\""
+- "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"lualatex a6.tex\""
 deploy:
   provider: releases
   api_key:

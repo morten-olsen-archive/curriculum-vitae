@@ -8,12 +8,20 @@
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{luacode}
 %\pagecolor{yellow!5!orange!2!white}
 \setlength{\columnseprule}{0.1pt}
 \newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
 \newcommand{\case}[2]{#1 #2}
 \newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
-
+\usepackage{markdown}
+\markdownSetup{
+  footnotes = true,
+  renderers = {
+    link     =       {#1},  % Render a link as the link label.
+    emphasis = {\emph{#1}}, % Render emphasis using `\emph`.
+  }
+}
 
 \newenvironment{columns}{
 	\ifnum\columncount>1
@@ -109,7 +117,7 @@
 {
 	\noindent
 	%\begin{minipage}{\textwidth}
-	
+
 	%\hrule
 	\begin{columns}
 		\noindent{\Large \textbf{#1}} \\ {\small #3} \\
