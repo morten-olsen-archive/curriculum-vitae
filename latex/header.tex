@@ -140,6 +140,10 @@
 \lhead{Curriculum Vitae}
 \rfoot{Page \thepage}
 
+\directlua{dofile("header.lua")}
+\newcommand*{\addHeader}{\directlua{addHeader()}}
+\addHeader
+
 \begin{document}
 \directlua{dofile("document.lua")}
 \newcommand*{\render}{\directlua{render()}}

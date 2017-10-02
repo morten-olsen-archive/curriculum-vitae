@@ -1,5 +1,6 @@
 {
   "name": "curriculum-vitae",
+  "watermark": "Draft",
   "version": "1.0.0",
   "description": "",
   "repository": {
@@ -14,6 +15,6 @@
   },
   "homepage": "https://github.com/morten-olsen/curriculum-vitae#readme",
   "scripts": {
-    "build:a4": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json harshjv/texlive-2015 sh -c \"lualatex a4.tex\" && open latex/a4.pdf"
+    "build:a4": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json  -v $(pwd)/package.json:/var/texlive/package.json harshjv/texlive-2015 sh -c \"lualatex a4.tex\" && open latex/a4.pdf"
   }
 }
