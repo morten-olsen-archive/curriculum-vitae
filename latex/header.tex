@@ -139,3 +139,9 @@
 \rhead{Morten Olsen \today}
 \lhead{Curriculum Vitae}
 \rfoot{Page \thepage}
+
+\begin{document}
+\directlua{dofile("document.lua")}
+\newcommand*{\render}{\directlua{render()}}
+\render
+\end{document}

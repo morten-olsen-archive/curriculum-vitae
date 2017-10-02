@@ -2,10 +2,6 @@
   "name": "curriculum-vitae",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/morten-olsen/curriculum-vitae.git"
@@ -18,6 +14,6 @@
   },
   "homepage": "https://github.com/morten-olsen/curriculum-vitae#readme",
   "scripts": {
-    "build:a4": "docker run -v $PWD:/var/texlive harshjv/texlive-2015 sh -c \"lualatex a4.tex\""
+    "build:a4": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json harshjv/texlive-2015 sh -c \"lualatex a4.tex\" && open latex/a4.pdf"
   }
 }

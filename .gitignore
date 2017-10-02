@@ -1,8 +1,9 @@
-/*.log
-/*.synctex.gz
-/*.toc
-/*.aux
-/*.pdf
+/latex/*.log
+/latex/*.synctex.gz
+/latex/*.toc
+/latex/*.aux
+/latex/*.pdf
 .DS_Store
-/_markdown_*
-/*.markdown.in
+/latex/_markdown_*
+/latex/*.markdown.in
+/latex/data.json
