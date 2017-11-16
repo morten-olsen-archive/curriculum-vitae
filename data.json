@@ -29,7 +29,7 @@
   "type": "skills",
   "data": {
     "title": "Platforms and Languages",
-    "description": "List of platforms which I have worked with and knows about. The list is a shortend down version with only the most known entries included.",
+    "description": "List of platforms which I have worked with and knows about. The list is a shortend down version.",
     "skills": [{
       "title": "C\\#",
       "level": 5
@@ -72,9 +72,6 @@
     },{
       "title": "Linux",
       "level": 5
-    },{
-      "title": "Nginx",
-      "level": 4
     }]
   }
 }, {
@@ -88,9 +85,9 @@
       },
       "title": "Frontend Technical Lead",
       "startDate": "2016",
-      "endDate": "Present",
+      "endDate": "2018",
       "description": "
-  In 2015 Trendsales decided to build an entirely new platform, where I was tasked with the creation of a new frontend architecture. The work began in 2016 with just me on the project and consisted of a proof of concept version containing everything from framework selection, structuring, style guides build chain, continous deployment and an actual initial working version. This is the platform I have been given technical ownership over and which I, along with 2 others, has been hard at work expanding over the past year. Currently the platform is powering _m.trendsales.dk_ and hopefully at the end of 2017 it will have taken over the entire _www.trendsales.dk_ domain. The project is build using React and state managment are done using Redux. In addition to the ofter shelve frameworks, we have also needed to develop quite a few bespoke frameworks, in order to meet demands, amongst the challenges those where created to overcome are:
+  In 2015 Trendsales decided to build an entirely new platform, where I was tasked with the creation of a new frontend architecture. The work began in 2016 with just me on the project and consisted of a proof of concept version containing everything from framework selection, structuring, style guides build chain, continous deployment and an actual initial working version. This is the platform I have been given technical ownership over and which I, along with 2 others, has been hard at work expanding over the past year. The platform is powering _m.trendsales.dk_. The project is build using React and state managment are done using Redux. In addition to the of the shelve frameworks, we also needed to develop quite a few bespoke frameworks, in order to meet demands. Among others, these where created to solve the following issues:
 
   * Introducing a new navigational paradime
   * Create a more flexible routing mechanism
@@ -106,14 +103,16 @@
       "startDate": "2012",
       "endDate": "2015",
       "description": "
-  I was offered the responsibility for the iOS platform, which was a task that required a new app to be build from the ground up and had to be so using _Xamarin_[^1]. In addition to that, a new API to support the app along with support for our larger vendors was needed which had to be build using something closely simular to _Microsoft MVC_ so that other people could join the project at a later state.
+  I was offered the responsibility for the iOS platform, which was a task that required a new app to be build from the ground up using _Xamarin_[^1]. In addition to that, a new API to support the app along with support for our larger vendors was needed which had to be build using something closely simular to _Microsoft MVC_ so that other people could join the project at a later state.
 
   The project started in October with the initial version available to our users in late December.
-  This project represent my first adventure into mobile development, and became an app with more than 15.000.000 screen views and 1.500.000 sessions pr month.
+  This project represent my first adventure into mobile development, and became an app with more than 15 million screen views and 1.5 million sessions pr month.
 
   After that, I joined two other colleagues, whom where working on an Android version of the app, to form a join mobile development team.
 
-  [^1]: Called MonoTouch back then
+  Throughout the periode I also worked on the backend for the web page from time to time.
+
+  [^1]: Called MonoTouch at the time
   "
     },{
       "company": {
@@ -135,7 +134,7 @@
       "startDate": "2010",
       "endDate": "2012",
       "description": "
-  I work as a part time web developer on bilzonen.dk . I have worked with both day-to-day maintenance and large scale projects (new search module, integration of new data catalog, mobile site, new-car-catalog and the entire dealer solution). The page is a Umbraco solution, with all .NET (C#) code. I have introduced a new custom build provider-model system, which allows data-providers to move data between data stores, external services and the site. (search, caching and external car date is running through the provider system). In addition i have set up the development environment , from setting up virtual server hosts to building custom tool for building and unit testing.
+  I work as a part time web developer on bilzonen.dk. I have worked with both day-to-day maintenance and large scale projects (new search module, integration of new data catalog, mobile site, new-car-catalog and the entire dealer solution). The page is a Umbraco solution, with all .NET (C#) code. I have introduced a new custom build provider-model system, which allows data-providers to move data between data stores, external services and the site. (search, caching and external car date is running through the provider system). In addition i have set up the development environment , from setting up virtual server hosts to building custom tool for building and unit testing.
   "
     },{
       "company": {
@@ -175,7 +174,7 @@
       "level": "5"
     },{
       "title": "RxJS",
-      "level": "5"
+      "level": "3"
     },{
       "title": "RxDB",
       "level": "5"
@@ -189,6 +188,9 @@
       "title": "Web API",
       "level": "5"
     },{
+      "title": "GraphQL",
+      "level": "3"
+    },{
       "title": "Babel",
       "level": "5"
     }]
@@ -197,8 +199,22 @@
   "type": "projects",
   "data": {
     "title": "Projects of interest",
-    "description": "A list of projects I have worked with or am working on, for which the source is publicly available. Keep in mind that some of these projects are in early stages, and some are simply created for the training, and may not represent the the actual way i think production code should be structured",
+    "description": "A list of projects I have worked with or am working on, for which the source is publicly available. Keep in mind that some of these projects are in early stages, and some are simply created for the training, and may not represent the the actual way I think production code should be structured",
     "projects": [{
+      "name": "Clash of Robots",
+      "tagline": "AI vs AI game enginge and IDE",
+      "url": "github.com/clash-of-robots/core",
+      "description": "
+  A game engine for creating AI vs. AI turn based games, including an IDE (still work in progress). THe project is created to be the base for a space drone vs. space drone AI game, where players are given control over a set of drones, and has to traverse the solar system, fighting to prosper as selles bots, pirate bots, communication relays or what ever the player decide to do within the confines of the sandbox
+  "
+    }, {
+      "name": "Curriculum Vitae",
+      "tagline": "Automated CV building",
+      "url": "github.com/morten-olsen/curriculum-vitae",
+      "description": "
+  Another small fun project is actually this resume, as it is created in \\LaTeX, versioned using _Git_ on _Github_ and set to automatically build and create multible release versions using _Travis CI_ and _Docker_
+  "
+    }, {
       "name": "LifeFlow Mind",
       "tagline": "Evernote meets \\LaTeX meets Jupyter",
       "url": "github.com/lifeflow-mind",
@@ -234,13 +250,6 @@
       "url": "github.com/morten-olsen/wolfsquad",
       "description": "
   This is an old project I did to play around with encryption in JavaScript. The initial boot loaded is served as regular JavaScript, but after login, all communication has a level of encryption applied based upon the password, which is never send the the server, as its encryption abilities offer this feature, without having to transfer sensitive information. It is currently available at https://http://wolfsquad.co/ with the username _admin_ and the password _password_
-  "
-    }, {
-      "name": "Curriculum Vitae",
-      "tagline": "Automated CV building",
-      "url": "github.com/morten-olsen/curriculum-vitae",
-      "description": "
-  Another small fun project is actually this resume, as it is created in \\LaTeX, versioned using _Git_ on _Github_ and set to automatically build and create multible release versions using _Travis CI_ and _Docker_
   "
     }]
   }

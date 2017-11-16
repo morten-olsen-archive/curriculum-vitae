@@ -7,3 +7,4 @@
 /latex/_markdown_*
 /latex/*.markdown.in
 /latex/data.json
+/latex/package.json
