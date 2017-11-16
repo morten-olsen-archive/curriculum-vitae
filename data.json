@@ -249,7 +249,7 @@
       "tagline": "I fun experiment with encryption",
       "url": "github.com/morten-olsen/wolfsquad",
       "description": "
-  This is an old project I did to play around with encryption in JavaScript. The initial boot loaded is served as regular JavaScript, but after login, all communication has a level of encryption applied based upon the password, which is never send the the server, as its encryption abilities offer this feature, without having to transfer sensitive information. It is currently available at https://http://wolfsquad.co/ with the username _admin_ and the password _password_
+  This is an old project I did to play around with encryption in JavaScript. The initial boot loaded is served as regular JavaScript, but after login, all communication has a level of encryption applied based upon the password, which is never send the the server, as its encryption abilities offer this feature, without having to transfer sensitive information. It is currently available at https://wolfsquad.co/ with the username _admin_ and the password _password_
   "
     }]
   }
