@@ -5,6 +5,6 @@
 /latex/*.pdf
 .DS_Store
 /latex/_markdown_*
-/latex/*.markdown.in
+.texpadtmp
 /latex/data.json
 /latex/package.json
