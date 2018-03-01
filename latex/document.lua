@@ -9,10 +9,11 @@ local function switch(a, case)
   local switchcase = {}
 
   switchcase["info"] = function()
-    tex.print("\\begin{cvtitle}{" .. value["name"] .. "}")
+    tex.print("\\begin{cvtitle}{" .. value["name"] .. "}{" .. value["image"] .. "}")
   	for key, value in pairs(value["info"]) do
   		tex.print("\\cvinfo{" .. value["name"] .. "}{" .. value["value"] .. "}")
-  	end
+    end
+    
   	tex.print("\\end{cvtitle}")
   end
 
