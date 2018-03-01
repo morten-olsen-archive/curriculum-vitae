@@ -15,6 +15,8 @@
   },
   "homepage": "https://github.com/morten-olsen/curriculum-vitae#readme",
   "scripts": {
-    "build:a4": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json  -v $(pwd)/package.json:/var/texlive/package.json harshjv/texlive-2015 sh -c \"lualatex a4.tex\" && open latex/a4.pdf"
+    "build:a4": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a4.tex\" && open latex/a4.pdf",
+    "build:a5": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a5.tex\" && open latex/a5.pdf",
+    "build:a6": "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a6.tex\" && open latex/a6.pdf"
   }
 }

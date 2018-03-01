@@ -2,15 +2,19 @@
   "type": "info",
   "data": {
     "name": "Morten Olsen",
+    "image": "assets/me.jpg",
     "info": [{
       "name": "E-mail",
-      "value": "morten@olsen.io"
+      "value": "morten@olsen.pro"
     },{
       "name": "Phone",
       "value": "+45 31 24 34 14"
     },{
       "name": "Location",
       "value": "Copenhagen, DK"
+    },{
+      "name": "Webpage",
+      "value": "https://morten.olsen.pro"
     },{
       "name": "Github",
       "value": "https://github.com/morten-olsen"
@@ -38,6 +42,9 @@
       "level": 5
     },{
       "title": "NodeJS",
+      "level": 5
+    },{
+      "title": "React Native",
       "level": 5
     },{
       "title": "HTML",
@@ -79,6 +86,15 @@
   "data": {
     "title": "Experiences",
     "positions": [{
+      "company": {
+        "name": "Sampension",
+        "webpage": "https://www.sampension.dk"
+      },
+      "title": "Senior Frontend Developer",
+      "startDate": "2018",
+      "endDate": "Present",
+      "description": "...To come"
+    }, {
       "company": {
         "name": "Trendsales",
         "webpage": "https://www.trendsales.dk"

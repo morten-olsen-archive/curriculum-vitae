@@ -50,9 +50,19 @@
 	\end{minipage}
 }
 
-\newenvironment{cvtitle}[1]{
+\newenvironment{cvtitle}[2]{
 	\noindent\begin{minipage}{\textwidth}
-		{\Huge \mbox{Curriculum Vitae}}	\hfill{\large \mbox{#1}}\\\\
+		%{\Huge Curriculum Vitae\newline\large #1}	\hfill{\large \mbox{#1} \includegraphics[height=3cm]{#2}}\\\\
+
+		\noindent\begin{minipage}{\textwidth - 3.2cm}
+			\Huge Curriculum Vitae\newline\large #1
+		\end{minipage}
+		\noindent\begin{minipage}{3cm}
+			\begin{flushright}
+				\includegraphics[height=3cm]{#2}
+			\end{flushright}
+		\end{minipage}
+		\vspace{0.5cm}
 		\hrule
 		\vspace{0.5cm}
 		\ifnum\skillcolumncount>1
