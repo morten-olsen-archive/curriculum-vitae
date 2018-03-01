@@ -4,15 +4,9 @@ services:
 before_install:
 - docker pull harshjv/texlive-2015
 script:
-- docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json
-  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets
-  harshjv/texlive-2015 sh -c "lualatex a4.tex"
-- docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json
-  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets
-  harshjv/texlive-2015 sh -c "lualatex a5.tex"
-- docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json
-  -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets
-  harshjv/texlive-2015 sh -c "lualatex a6.tex"
+- "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a4.tex\""
+- "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a5.tex\""
+- "docker run -v $(pwd)/latex:/var/texlive -v $(pwd)/data.json:/var/texlive/data.json -v $(pwd)/package.json:/var/texlive/package.json -v $(pwd)/assets:/var/texlive/assets harshjv/texlive-2015 sh -c \"lualatex a6.tex\""
 deploy:
   provider: releases
   api_key:
