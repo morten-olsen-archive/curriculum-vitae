@@ -8,3 +8,4 @@
 .texpadtmp
 /latex/data.json
 /latex/package.json
+/latex/*.in
