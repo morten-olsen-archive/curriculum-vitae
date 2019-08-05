@@ -56,29 +56,11 @@
       "title": "TypeScript",
       "level": 5
     },{
-      "title": "PHP",
-      "level": 2
-    },{
       "title": "Docker",
       "level": 4
     },{
-      "title": "T-SQL",
-      "level": 3
-    },{
-      "title": "MySQL",
-      "level": 3
-    },{
-      "title": "Postgres",
-      "level": 2
-    },{
-      "title": "Elastic Search",
-      "level": 3
-    },{
-      "title": "GraphQL",
-      "level": 4
-    },{
       "title": "Linux",
-      "level": 5
+      "level": 4
     }]
   }
 }, {
@@ -93,7 +75,12 @@
       "title": "Senior Frontend Developer",
       "startDate": "2018",
       "endDate": "Present",
-      "description": "...To come"
+      "description": "
+Sampension is a danish pension fund and my work has been to design and help to build a frontend architecture that would run natively on iOS and Android as well as on the web on both desktop and mobile devices. 
+It was important to ensure that the project felt at home on all platforms and that it was maintainable by a small team of developers.
+
+To achieve this we used React Native and React Native for Web to create a unified codebase for all platforms, as well as create a component library which would deal with ensuring the best UX on all platforms.
+"
     }, {
       "company": {
         "name": "Trendsales",
@@ -198,12 +185,6 @@ I work as a part-time supporter of customers (private and business) and staff, o
       "title": "Styled-Components",
       "level": "5"
     },{
-      "title": "MVC",
-      "level": "5"
-    },{
-      "title": "Web API",
-      "level": "5"
-    },{
       "title": "GraphQL",
       "level": "3"
     },{
@@ -245,20 +226,11 @@ I love Evernote simple digital note storages, but as a developer and general ner
 One of the most significant issues I had to overcome when I began building the revamped Trendsales front end was that the design called for an advanced navigation strategy, which did not fit into the webs linear document structure, but rather a branched multi-layer navigation. Therefore I created this project to create a high-level abstraction using a navigation trap to allow for much more advanced navigation patterns
 "
     }, {
-      "name": "Snipsy",
-      "tagline": "Snippet installation made easy",
-      "url": "github.com/morten-olsen/snipsy",
+      "name": "Clubhouse Protocol",
+      "tagline": "An OpenPGP based crypto group communication with decentralised rule management for both humans and machines",
+      "url": "github.com/clubhouse-protocol",
       "description": "
-One recurent issue when dealing with fast responding web pages is the issue of external resources, since these often comes with a short cache validity and issues such as missing compression. To improve this, I am working on a system, where installation into a platform can be offered by the external part, so for instance, _Google Tag Manager_ can be installed using a Google build installer to ensure it gets setup correct. After that the snippet lives inside the application, where it caches and serves these otherwise external resources.
-"
-    }, {
-      "name": "Labyrinth Guards",
-      "tagline": "A/B testing in React",
-      "url": "github.com/morten-olsen/labyrinth-guards",
-      "description": "
-As we need to do a lot of A/B testing at Trendsales and no real solutions with the level of flexibility we needed were available for React, I created _Labyrinth Guard_[^1] which support server-side caching of test suites, a high degree of flexibility and simple test result gatherings. Labyrinth Guards in itself is only a framework, which uses external services for test result gathering, currently supporting Google Analytics, but another standalone server is in the making.
-
-[^1]: The name is a reference to https://xkcd.com/246/
+A cryptographic communication platform where all messages are end-to-end encrypted. It uses a decentralized rule set, so every message is verified and applied by the clients individually
 "
     }, {
       "name": "wolfsquad.co",
