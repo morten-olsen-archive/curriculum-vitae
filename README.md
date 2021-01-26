@@ -41,7 +41,7 @@ Platforms and languages which I have worked with. The list is a shortened down v
 
 
 **[Sampension](https://www.sampension.dk) - Senior Frontend Developer**
-_[2018](Present) - Senior Frontend Developer_
+_2018 - Present_
 
 Sampension is a danish pension fund and my work has been to design and help to build a frontend architecture that would run natively on iOS and Android as well as on the web on both desktop and mobile devices.
 
@@ -51,7 +51,7 @@ To achieve this we used React Native and React Native for Web to create a unifie
 
 
 **[Trendsales](https://www.trendsales.dk) - Frontend Technical Lead**
-_[2016](2018) - Frontend Technical Lead_
+_2016 - 2018_
 
 In 2015 Trendsales decided to build an entirely new platform. It became my responsibility to create a modernized frontend architecture. The work began in 2016 with just me on the project and consisted of a proof of concept version containing everything from framework selection, structure, style guides build chain, continuous deployment, and an actual initial working version. The result where the platform which I was given technical ownership over and which I, along with two others, worked on expanding over the next year. The platform is currently powering _m.trendsales.dk_. The project is build using React and state management are done using Redux. In addition to the of the shelve frameworks, we also needed to develop quite a few bespoke frameworks, in order to meet demands. Among others, these were created to solve the following issues:
 
@@ -62,7 +62,7 @@ In 2015 Trendsales decided to build an entirely new platform. It became my respo
 
 
 **[Trendsales](https://www.trendsales.dk) - iOS and Android Developer**
-_[2012](2015) - iOS and Android Developer_
+_2012 - 2015_
 
 I became responsible for the iOS platform, which was a task that required a new app to be built from the ground up using _Xamarin_[^1]. In addition to that, a new API to support the app along with support for our larger vendors was needed which had to be build using something closely similar to _Microsoft MVC_ so that other people could join the project at a later stage.
 
@@ -78,25 +78,25 @@ This project represented my first adventure into mobile development and became a
 
 
 **[Trendsales](https://www.trendsales.dk) - Web Developer**
-_[2012](2012) - Web Developer_
+_2012 - 2012_
 
 I got a part-time job at Trendsales, where my primary responsibility was maintaining the API which powered the iOS app. Quickly my tasks became more diverse, and I ended using about 25-50% of my time on the API, while the remaining was spend doing work on the platform in general.
 
 
 **[BilZonen](http://www.bilzonen.dk) - Web Developer**
-_[2010](2012) - Web Developer_
+_2010 - 2012_
 
 I work as a part-time web developer on bilzonen.dk. I have worked with both day-to-day maintenance and large scale projects (new search module, integration of new data catalog, mobile site, new-car-catalog and the entire dealer solution). The page is an Umbraco solution, with all .NET (C#) code. I have introduced a new custom build provider-model system, which allows data-providers to move data between data stores, external services, and the site. (search, caching and external car date is running through the provider system). Also, i have set up the development environment, from setting up virtual server hosts to building custom tool for building and unit testing.
 
 
 **[Haastrup IT](undefined) - Web Developer**
-_[2009](2010) - Web Developer_
+_2009 - 2010_
 
  I have worked as a part time project koordinator and systems developer, sitting with responsibility for a wide variety of projects including projects for "Københavns Kommune" (Navision reporting software) and "Syddanmarks kommune" (Electronic application processing system). Most projects were made in C#, but also PHP, VB, ActionScript. In addtion to that i maintained the in-house hosting setup.  
 
 
 **[Sydbank](undefined) - IT Hotline**
-_[2007](2009) - IT Hotline_
+_2007 - 2009_
 
  I work as a part-time supporter of customers (private and business) and staff, on Sydbanks different electronic banking systems. Mostly telephonic bug finding and PC setup.
 

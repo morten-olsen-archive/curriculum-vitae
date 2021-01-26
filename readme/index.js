@@ -22,7 +22,7 @@ ${data.skills.map(d => `* **${d.title}**: ${d.level} `).join('\n')}
 
 ${data.positions.map(d => `
 **[${d.company.name}](${d.company.webpage}) - ${d.title}**
-_[${d.startDate}](${d.endDate}) - ${d.title}_
+_${d.startDate} - ${d.endDate}_
 
 ${d.description}
 
