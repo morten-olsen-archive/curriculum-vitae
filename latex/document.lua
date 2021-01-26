@@ -1,7 +1,7 @@
 require("lualibs.lua")
-local file = io.open('data.json')
+local file = io.open('../data.json')
 local jsonstring = file:read('*a')
-file.close()
+file:close()
 jsondata =  utilities.json.tolua(jsonstring)
 
 local function switch(a, case)
@@ -9,7 +9,7 @@ local function switch(a, case)
   local switchcase = {}
 
   switchcase["info"] = function()
-    tex.print("\\begin{cvtitle}{" .. value["name"] .. "}{" .. value["image"] .. "}")
+    tex.print("\\begin{cvtitle}{" .. value["name"] .. "}{../" .. value["image"] .. "}")
   	for key, value in pairs(value["info"]) do
   		tex.print("\\cvinfo{" .. value["name"] .. "}{" .. value["value"] .. "}")
     end
