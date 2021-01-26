@@ -25,11 +25,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: latex/a4.tex
+          root_file: a4.tex
           working_directory: latex
           latexmk_use_lualatex: true
       
       - uses: actions/upload-artifact@v2
         with:
           name: pdfs
-          path: a4.pdf
+          path: latex/*.pdf
