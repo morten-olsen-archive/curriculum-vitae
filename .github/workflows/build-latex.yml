@@ -24,6 +24,7 @@ jobs:
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
+        with:
           root_file: latex/a4.tex
       
       - uses: actions/upload-artifact@v2
