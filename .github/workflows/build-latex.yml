@@ -6,9 +6,9 @@ name: Build latex
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -38,7 +38,7 @@ jobs:
           path: latex/*.pdf
   release:
     needs: [build]
-    if: github.ref == 'ref/head/master'
+    if: github.ref == 'ref/head/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
