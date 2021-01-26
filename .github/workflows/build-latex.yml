@@ -26,8 +26,10 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: latex/a4.tex
+          working_directory: latex
+          latexmk_use_lualatex: true
       
       - uses: actions/upload-artifact@v2
         with:
           name: pdfs
-          path: latex/a4.pdf
+          path: a4.pdf
