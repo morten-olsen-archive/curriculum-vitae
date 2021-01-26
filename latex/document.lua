@@ -1,5 +1,5 @@
 require("lualibs.lua")
-local file = io.open('data.json')
+local file = io.open('../data.json')
 local jsonstring = file:read('*a')
 file.close()
 jsondata =  utilities.json.tolua(jsonstring)
