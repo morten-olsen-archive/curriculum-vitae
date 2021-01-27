@@ -28,6 +28,7 @@ jobs:
           name: pdfs
           path: latex/*.pdf
   update-readme:
+    needs: [build]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
