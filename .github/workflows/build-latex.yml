@@ -27,7 +27,17 @@ jobs:
         with:
           name: pdfs
           path: latex/*.pdf
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: README.md
+          author_name: Git Actions
+          author_email: gitactions@example.com
+          message: Updated README.md
   release:
     needs: [build]
     if: github.ref == 'refs/heads/main'
