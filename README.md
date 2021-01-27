@@ -167,3 +167,5 @@ _A fun experiment with encryption_
 
   
 
+**[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
+
