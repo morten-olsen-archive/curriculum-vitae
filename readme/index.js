@@ -21,8 +21,8 @@ ${data.skills.map(d => `* **${d.title}**: ${d.level} `).join('\n')}
 ## ${data.title}
 
 ${data.positions.map(d => `
-**[${d.company.name}](${d.company.webpage}) - ${d.title}**
-_${d.startDate} - ${d.endDate}_
+### [${d.company.name}](${d.company.webpage})
+**${d.title}** _(${d.startDate} - ${d.endDate})_
 
 ${d.description}
 
@@ -50,8 +50,6 @@ let document = `
 **[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
 
 ${data.map(d => sections[d.type](d.data)).join('\n------\n')}
-
-**[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
 `;
 
 console.log(document);
