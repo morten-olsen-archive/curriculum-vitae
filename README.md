@@ -7,7 +7,6 @@
 
 ## Basic Info
 * **E-mail**: morten@olsen.pro
-* **Phone**: +45 31 24 34 14
 * **Location**: Copenhagen, DK
 * **Webpage**: https://morten.olsen.pro
 * **Github**: https://github.com/morten-olsen
