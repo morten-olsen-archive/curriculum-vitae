@@ -1,0 +1,11 @@
+/latex/*.log
+/latex/*.synctex.gz
+/latex/*.toc
+/latex/*.aux
+/latex/*.pdf
+.DS_Store
+/latex/_markdown_*
+.texpadtmp
+/latex/data.json
+/latex/package.json
+/latex/*.in
