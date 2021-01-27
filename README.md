@@ -1,3 +1,5 @@
+
+
 # Curriculum Vitae
 
 **[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
@@ -161,3 +163,9 @@ _An OpenPGP based crypto group communication with decentralised rule management 
 _A fun experiment with encryption_
 
  This is an old project I did to play around with encryption in JavaScript. The initial boot loader is served as regular JavaScript, but after login, all communication has a level of encryption applied based upon the password, which is never sent to the server, as its encryption abilities offer this feature, without having to transfer sensitive information. It is currently available at https://wolfsquad.co/ with the username _admin_ and the password _password_
+
+
+  
+
+**[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
+

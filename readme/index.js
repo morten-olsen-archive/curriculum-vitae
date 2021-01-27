@@ -50,6 +50,8 @@ let document = `
 **[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
 
 ${data.map(d => sections[d.type](d.data)).join('\n------\n')}
+
+**[Download the latest version](https://github.com/morten-olsen/curriculum-vitae/releases/latest)**
 `;
 
 console.log(document);
