@@ -6,11 +6,9 @@
 
 
 ## Basic Info
-* **E-mail**: morten@olsen.pro
+* **E-mail**: hello@buy-me.coffee
 * **Location**: Copenhagen, DK
-* **Webpage**: https://morten.olsen.pro
 * **Github**: https://github.com/morten-olsen
-* **CodePen**: https://codepen.io/morten-olsen
   
 ------
 
