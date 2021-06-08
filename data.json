@@ -5,19 +5,13 @@
     "image": "assets/me.jpg",
     "info": [{
       "name": "E-mail",
-      "value": "morten@olsen.pro"
+      "value": "hello@buy-me.coffee"
     },{
       "name": "Location",
       "value": "Copenhagen, DK"
     },{
-      "name": "Webpage",
-      "value": "https://morten.olsen.pro"
-    },{
       "name": "Github",
       "value": "https://github.com/morten-olsen"
-    },{
-      "name": "CodePen",
-      "value": "https://codepen.io/morten-olsen"
     }]
 }
 }, {
